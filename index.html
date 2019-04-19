@@ -1,0 +1,197 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <script src= "src/adapter.js" defer></script>
+    <script src= "src/index.js" defer></script>
+    <link rel="stylesheet" href="src/style.css">
+        <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <meta charset="utf-8d">
+    <title>Jump Man</title>
+    <img id="chibi" width="1" height="1" src="./src/images/chibi.png" alt="chibi">
+    <img id="dragon" width="1" height="1" src="./src/images/dragon.png" alt="dragon">
+    <img id="background" width="1" height="1" src="./src/images/background.jpg" alt="background">
+    <img id="text" width="1" height="1" src="./src/images/text.png" alt="text">
+    <img id="gameover" width="1" height="1" src="./src/images/gameover.png" alt="text">
+
+  </head>
+  <body>
+    <nav>
+    <div class="nav-wrapper" id="nav">
+      <a href="#" class="brand-logo center">CHIBI JUMP</a>
+      <!-- <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul> -->
+    </div>
+
+
+
+  </nav>
+
+
+
+
+    <!-- <div class="headerLogo">
+      <h1 id="logo">Jump Man</h1>
+    </div> -->
+
+
+  <!-- <h1 class="logo">Jump Man</h1>
+  <div id="play-ground"> -->
+
+    <!-- Start Game Button> -->
+    <!-- <span id="player-span">
+      <button id="start-game" type="submit">Start Game</button> -->
+
+
+      <!-- Trigger the Modal Form -->
+
+
+<!-- Trigger the Modal Form -->
+
+<div class="modalNEW">
+        <div class="modal-contentNEW">
+          <span id="modal-title-text">
+
+          </span>
+          <form action="/index.html" method="post">
+            <label id="lable-name-modal"for="name"> O great jumping Knight. What is thy name?</label>
+            <input id="player-name" name="name" value="">
+            <button id="new-player-btn" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      </div>
+        <div>
+        <canvas id="canvas" width="1000" height="500">
+          <!-- This is the area that we will be adding in the canvas and game screen  -->
+        </canvas>
+      </div>
+
+      <!-- <div class="actionBar">
+        <div class="actionBarTitle">
+          <p> Behold! Test thy reflexes and help Chibi the Knight dodge the chub dragon.
+            <br>
+            Use de spacebar to command Chibi to jump.
+          </p>
+
+        </div> -->
+
+      </div>
+<div id="score-card-table" class="highlight">
+<h4> Best Jumpers: </h4>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Score</th>
+
+      </tr>
+    </thead>
+
+    <tbody  id="table-info">
+      <tr>
+        <!-- <td>Alvin</td>
+        <td>600</td> -->
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+        <br>
+        <!-- this part is remporary form that will be updated once we can get the timer from the game result  -->
+
+    </div>
+
+
+
+
+
+
+    <!-- *****************sliding panel******************** -->
+    <!-- <input id="clicker" type="checkbox" />
+      <label for="clicker">Click me! I'm an arbitrary trigger</label>
+
+
+      <div class="panel-wrap">
+        <div class="panel">
+          <h3>Yay! Panels!</h3>
+          <p>Distillery freegan bitters twee.  Food truck dreamcatcher PBR&amp;B chillwave brunch.  Fixie mustache umami Neutra dreamcatcher, Odd Future try-hard master cleanse pork belly iPhone Etsy.  Disrupt kogi Echo Park, wolf DIY literally meditation skateboard gentrify photo booth Carles asymmetrical mumblecore.  Fashion axe 3 wolf moon normcore scenester, bitters drinking vinegar banh mi keytar swag 8-bit.  Tote bag heirloom pickled authentic mlkshk, scenester hoodie shabby chic Kickstarter tattooed church-key Helvetica Wes Anderson.  Ennui craft beer art party, 8-bit chillwave single-origin coffee mlkshk.</p>
+
+    <p>Distillery freegan bitters twee.  Food truck dreamcatcher PBR&amp;B chillwave brunch.  Fixie mustache umami Neutra dreamcatcher, Odd Future try-hard master cleanse pork belly iPhone Etsy.  Disrupt kogi Echo Park, wolf DIY literally meditation skateboard gentrify photo booth Carles asymmetrical mumblecore.  Fashion axe 3 wolf moon normcore scenester, bitters drinking vinegar banh mi keytar swag 8-bit.  Tote bag heirloom pickled authentic mlkshk, scenester hoodie shabby chic Kickstarter tattooed church-key Helvetica Wes Anderson.  Ennui craft beer art party, 8-bit chillwave single-origin coffee mlkshk.</p>
+  <p>Distillery freegan bitters twee.  Food truck dreamcatcher PBR&amp;B chillwave brunch.  Fixie mustache umami Neutra dreamcatcher, Odd Future try-hard master cleanse pork belly iPhone Etsy.  Disrupt kogi Echo Park, wolf DIY literally meditation skateboard gentrify photo booth Carles asymmetrical mumblecore.  Fashion axe 3 wolf moon normcore scenester, bitters drinking vinegar banh mi keytar swag 8-bit.  Tote bag heirloom pickled authentic mlkshk, scenester hoodie shabby chic Kickstarter tattooed church-key Helvetica Wes Anderson.  Ennui craft beer art party, 8-bit chillwave single-origin coffee mlkshk.</p>
+  <p>Distillery freegan bitters twee.  Food truck dreamcatcher PBR&amp;B chillwave brunch.  Fixie mustache umami Neutra dreamcatcher, Odd Future try-hard master cleanse pork belly iPhone Etsy.  Disrupt kogi Echo Park, wolf DIY literally meditation skateboard gentrify photo booth Carles asymmetrical mumblecore.  Fashion axe 3 wolf moon normcore scenester, bitters drinking vinegar banh mi keytar swag 8-bit.  Tote bag heirloom pickled authentic mlkshk, scenester hoodie shabby chic Kickstarter tattooed church-key Helvetica Wes Anderson.  Ennui craft beer art party, 8-bit chillwave single-origin coffee mlkshk.</p>
+  <p>Distillery freegan bitters twee.  Food truck dreamcatcher PBR&amp;B chillwave brunch.  Fixie mustache umami Neutra dreamcatcher, Odd Future try-hard master cleanse pork belly iPhone Etsy.  Disrupt kogi Echo Park, wolf DIY literally meditation skateboard gentrify photo booth Carles asymmetrical mumblecore.  Fashion axe 3 wolf moon normcore scenester, bitters drinking vinegar banh mi keytar swag 8-bit.  Tote bag heirloom pickled authentic mlkshk, scenester hoodie shabby chic Kickstarter tattooed church-key Helvetica Wes Anderson.  Ennui craft beer art party, 8-bit chillwave single-origin coffee mlkshk.</p>
+</div>
+</div> -->
+
+<!-- ************MATERIALIZE MODAL********************** -->
+
+<!-- Modal Structure -->
+<!-- <div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Modal Header</h4>
+    <p>A bunch of text</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+  </div>
+</div> -->
+
+<!-- ***********************FOOTER*********************** -->
+
+
+
+
+<footer class="page-footer" id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">CHIBI JUMP</h5>
+        <p class="grey-text text-lighten-4"></p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text"></h5>
+        <!-- <ul>
+          <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+
+        <footer class="page-footer" id="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text"></h5>
+                <p class="grey-text text-lighten-4"></p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text"></h5>
+                <!-- <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+
+                </ul> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-copyright">
+            <div class="container">
+            © 2019 HIP HIP [RICH, AKRAM]
+            <a class="grey-text text-lighten-4 right" href="#!"></a>
+            </div>
+          </div>
+        </footer>
+  </body>
+</html>
